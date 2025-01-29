@@ -1,0 +1,94 @@
+/* 自定义样式 */
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+}
+
+/* 文档图片样式 */
+.vp-doc img {
+  border-radius: 10px;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.2s ease;
+}
+
+.vp-doc img:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式布局调整 */
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-width: 300px;
+    --vp-home-hero-image-height: 300px;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-width: 400px;
+    --vp-home-hero-image-height: 400px;
+  }
+}
+
+.el-descriptions {
+  display: block;
+  overflow-x: auto;
+}
+
+.el-descriptions table {
+  display: table;
+}
+
+.el-descriptions .el-descriptions__label {
+  white-space: nowrap;
+}
+
+.el-drawer .el-drawer__header {
+  margin-bottom: 0px;
+}
+/* 当抽屉弹出时锁定主页面滚动，Element Plus bug */
+.el-popup-parent--hidden {
+  overflow: hidden;
+}
+
+.el-tag {
+  margin: 5px 5px 0px 0px;
+}
+
+.el-tag .el-tag__content {
+  display: inline-flex;
+  align-items: center;
+}
+
+.el-icon + span,
+.el-icon + p,
+.el-icon + a {
+  margin-left: 8px;
+}
+
+ul.el-timeline {
+  list-style: none;
+}
+
+.el-card {
+  margin: 0.5rem;
+}
+.vp-doc .el-card {
+  margin: 0.5rem 0;
+}
+
+.footnotes {
+  font-size: small;
+}
+.footnotes p {
+  line-height: 1.5rem;
+}
+
+.vp-doc li,
+.vp-doc p {
+  text-align: justify;
+}

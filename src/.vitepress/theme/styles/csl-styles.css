@@ -1,0 +1,54 @@
+/* Cursor Tutorial Website Styles */
+:root {
+  --cursor-primary: #007acc;
+  --cursor-secondary: #1e1e1e;
+  --cursor-accent: #0098ff;
+  --cursor-text: #333333;
+  --cursor-background: #ffffff;
+}
+
+.tutorial-section {
+  padding: 2rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: var(--cursor-background);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tutorial-heading {
+  color: var(--cursor-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tutorial-content {
+  color: var(--cursor-text);
+  line-height: 1.6;
+}
+
+.tutorial-code {
+  background-color: var(--cursor-secondary);
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.tutorial-note {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--cursor-accent);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .tutorial-section {
+    padding: 1rem;
+  }
+
+  .tutorial-heading {
+    font-size: 1.25rem;
+  }
+}
